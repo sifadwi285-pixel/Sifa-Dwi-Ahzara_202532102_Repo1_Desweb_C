@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulir untuk menceritakan kebiasaan belajar dan meminta saran jadwal.">
+  <title>Kontak - Ruang Produktif</title>
+</head>
+<body>
+
+  <header>
+    <h1>Ruang Produktif</h1>
+    <p>Kontak: ceritakan kebiasaan belajarmu.</p>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="index (1).html">Beranda</a></li>
+        <li><a href="artikel.html">Artikel</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Minta Saran Jadwal</h2>
+      <p>
+        Isi formulir berikut supaya saran jadwalnya sesuai dengan kondisimu. Kolom yang bertanda
+        bintang (*) wajib diisi.
+      </p>
+
+      <form action="kontak.html" method="get">
+
+        <fieldset>
+          <legend>Data Diri</legend>
+
+          <p>
+            <label for="nama">Nama lengkap *</label><br>
+            <input type="text" id="nama" name="nama" required minlength="3" maxlength="60" placeholder="Contoh: Sifaa">
+          </p>
+
+          <p>
+            <label for="email">Alamat email *</label><br>
+            <input type="email" id="email" name="email" required placeholder="nama@contoh.com">
+          </p>
+
+          <p>
+            <label for="semester">Semester saat ini *</label><br>
+            <input type="number" id="semester" name="semester" required min="1" max="14">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Kebiasaan Belajar</legend>
+
+          <p>Kapan waktu paling nyaman untuk belajar? *</p>
+          <p>
+            <input type="radio" id="waktu-pagi" name="waktu" value="pagi" required>
+            <label for="waktu-pagi">Pagi</label>
+          </p>
+          <p>
+            <input type="radio" id="waktu-siang" name="waktu" value="siang">
+            <label for="waktu-siang">Siang</label>
+          </p>
+          <p>
+            <input type="radio" id="waktu-malam" name="waktu" value="malam">
+            <label for="waktu-malam">Malam</label>
+          </p>
+
+          <p>Apa kendala utamamu? (boleh pilih lebih dari satu)</p>
+          <p>
+            <input type="checkbox" id="kendala-menunda" name="kendala" value="menunda">
+            <label for="kendala-menunda">Sering menunda tugas</label>
+          </p>
+          <p>
+            <input type="checkbox" id="kendala-fokus" name="kendala" value="fokus">
+            <label for="kendala-fokus">Sulit fokus</label>
+          </p>
+          <p>
+            <input type="checkbox" id="kendala-tenggat" name="kendala" value="tenggat">
+            <label for="kendala-tenggat">Tenggat tugas bertabrakan</label>
+          </p>
+          <p>
+            <input type="checkbox" id="kendala-istirahat" name="kendala" value="istirahat">
+            <label for="kendala-istirahat">Kurang waktu istirahat</label>
+          </p>
+
+          <p>
+            <label for="jam-belajar">Berapa jam belajar mandiri per hari? *</label><br>
+            <select id="jam-belajar" name="jam-belajar" required>
+              <option value="">-- Pilih salah satu --</option>
+              <option value="kurang-1">Kurang dari 1 jam</option>
+              <option value="1-2">1 sampai 2 jam</option>
+              <option value="3-4">3 sampai 4 jam</option>
+              <option value="lebih-4">Lebih dari 4 jam</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Pesan</legend>
+          <p>
+            <label for="cerita">Ceritakan jadwal atau masalahmu *</label><br>
+            <textarea id="cerita" name="cerita" rows="5" cols="40" required minlength="10" maxlength="500"></textarea>
+          </p>
+        </fieldset>
+
+        <p>
+          <input type="checkbox" id="setuju" name="setuju" value="ya" required>
+          <label for="setuju">Saya setuju datanya dipakai untuk keperluan memberi saran jadwal *</label>
+        </p>
+
+        <p>
+          <button type="submit">Kirim</button>
+          <button type="reset">Hapus Isian</button>
+        </p>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; Ruang Produktif, Made by Sifa.</p>
+    <nav aria-label="Navigasi footer">
+      <a href="index.html">Beranda</a> |
+      <a href="artikel.html">Artikel</a> |
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
